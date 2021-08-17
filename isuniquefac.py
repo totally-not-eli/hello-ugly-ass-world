@@ -6,6 +6,8 @@ e.g.
 145 = 1! + 4! + 5!
 """
 
+import keyboard
+
 class Stack:
     def __init__(self):
         self.stack = ["1"]
@@ -38,7 +40,7 @@ def iscount(count):
 
 def isuniquefac():
     lis = Stack()
-    ans = []
+    ans = new = []
     count = 0
     while True:
         i = lis.peek()
@@ -51,7 +53,8 @@ def isuniquefac():
             iscount(count)
             ans.append(hold)
             lis.add(str(int(i)+1))
+            new.append(count)
         else:
             iscount(count)
             lis.add(str(int(i)+1))
-    print("Made {} iterations, here are the values that suits the value for unique factorial {}".format(lis.len(),ans))
+        print("Made {} iterations, here are the values that suits the value for unique factorial {}, they were found at the following iterations {}".format(lis.len(),ans,new))
