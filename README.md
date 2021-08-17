@@ -1,5 +1,5 @@
 # UniqueFactorial World of Engineer trivia implementation
-context:
+## context:
 loops through an integer (as string), in which, when came across with, will show if it is equal to the sum of individual factorials with respect to the placement.
 e.g.
 1 = 1!
