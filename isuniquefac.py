@@ -56,4 +56,4 @@ def isuniquefac():
         else:
             iscount(count)
             lis.add(str(int(i)+1))
-        print("Made {} iterations, here are the values that suits the value for unique factorial {}".format(lis.len(),ans))
+            print("Made {} iterations, here are the values that suits the value for unique factorial {}".format(lis.len(),ans))
