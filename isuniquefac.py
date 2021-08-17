@@ -40,7 +40,8 @@ def iscount(count):
 
 def isuniquefac():
     lis = Stack()
-    ans = new = []
+    ans = []
+    new = []
     count = 0
     while True:
         i = lis.peek()
